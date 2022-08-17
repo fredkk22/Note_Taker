@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const { readFromFile, writeToFile, readAndAppend } = require('./helpers/fsUtils');
+const { readFromFile, readAndRemove, readAndAppend } = require('./helpers/fsUtils');
 const uuid = require('./helpers/uuid');
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -41,6 +41,11 @@ app.post('/api/notes', (req, res) => {
         res.error("Error! Couldn't add note")
     }
 });
+
+app.delete('/api/notes/:id', (req, res) => {
+    // readAndRemove('./db/db.json');
+    res.json(`Note Deleted!`);
+})
 
 app.listen(PORT, () =>
     console.log(`App listening at http://localhost:${PORT} 🚀`)
