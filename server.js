@@ -43,7 +43,15 @@ app.post('/api/notes', (req, res) => {
 });
 
 app.delete('/api/notes/:id', (req, res) => {
-    // readAndRemove('./db/db.json');
+    console.info(`${req.method} request received for your selected note`)
+    const { title, text, id } = req.body;
+
+    const deleteNote = {
+        title,
+        text,
+        id
+    };
+    readAndRemove(deleteNote.id, './db/db.json');
     res.json(`Note Deleted!`);
 })
 
