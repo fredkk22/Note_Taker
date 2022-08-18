@@ -17,7 +17,7 @@ I was able to learn everything I listed above, and look forward to putting this 
 
 ## Video Recording
 
-[![Watch Video!](https://img.youtube.com/vi/LO-mRJA2lIk/maxresdefault.jpg)](https://youtu.be/LO-mRJA2lIk)
+[![Watch Video!](https://img.youtube.com/vi/RmtGSXP5Wg8/maxresdefault.jpg)](https://youtu.be/RmtGSXP5Wg8)
 
 ## Credits
 
